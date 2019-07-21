@@ -23,7 +23,7 @@ packer validate -var-file=packer/variables.json.example packer/app.json
 echo '[PACKER] Validate db.json'
 packer validate -var-file=packer/variables.json.example packer/db.json
 
-ssh-keygen -f ~/.ssh/gcp -q -N ""
+#ssh-keygen -f ~/.ssh/gcp -q -N ""
 cd terraform/stage
 #cp terraform.tfvars.example terraform.tfvars
 echo "=============== terraform get ==============="
@@ -32,7 +32,11 @@ echo "=============== terraform init ==============="
 terraform init
 echo "=============== terraform validate ==============="
 terraform validate
+echo "=============== terraform tflint ==============="
+tflint --ignore-module SweetOps/storage-bucket
 cd ../..
+
+
 
 echo '[ANSIBLE] Validate site.yml ==============='
 cd ansible
