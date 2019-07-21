@@ -1,0 +1,8 @@
+project = "infra-244217"
+public_key_path = "/Users/efimovi/Otus/DevOps_course/.ssh/gcp.pub"
+app_disk_image = "reddit-ruby-only"
+db_disk_image = "reddit-db-only"
+private_key_path = "/Users/efimovi/Otus/DevOps_course/.ssh/gcp"
+zone = "europe-west1-b"
+instance_count = "1"
+autodeploy = "false"

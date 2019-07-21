@@ -1,0 +1,5 @@
+language: bash
+before_install:
+- sudo apt-get install -y libxml2-dev
+- echo "Ahoj"
+
