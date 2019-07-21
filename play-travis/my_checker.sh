@@ -14,7 +14,7 @@ wget -O /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7
 sudo unzip -o -d  /usr/local/bin/ /tmp/tflint.zip
 
 echo '[ANSIBLE-LINT] Intalling ansible-lint ==============='
-pip install ansible-lint
+pip install ansible-lint --user
 
 
 echo '[VALIDATION SECTION]'
