@@ -1,5 +1,7 @@
+dist: trusty
+sudo: required
 language: bash
 before_install:
 - sudo apt-get install -y libxml2-dev
 - echo "Ahoj"
-
+- ./play-travis/my_checker.sh
