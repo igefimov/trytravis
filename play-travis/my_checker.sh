@@ -23,12 +23,12 @@ packer validate -var-file=packer/variables.json.example packer/app.json
 echo '[PACKER] Validate db.json'
 packer validate -var-file=packer/variables.json.example packer/db.json
 
-#ssh-keygen -f ~/.ssh/gcp -q -N ""
-#cd ../terraform/prod
-#cp terraform.tfvars.example terraform.tfvars
-#echo "=============== terraform get ==============="
-#terraform get
-#echo "=============== terraform init ==============="
-#terraform init
-#echo "=============== terraform validate ==============="
-#terraform validate
+ssh-keygen -f ~/.ssh/gcp -q -N ""
+cd ../terraform/prod
+cp terraform.tfvars.example terraform.tfvars
+echo "=============== terraform get ==============="
+terraform get
+echo "=============== terraform init ==============="
+terraform init
+echo "=============== terraform validate ==============="
+terraform validate
