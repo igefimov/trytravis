@@ -32,7 +32,7 @@ echo "=============== terraform init ==============="
 terraform init
 echo "=============== terraform validate ==============="
 terraform validate
-
+cd ../..
 
 echo '[ANSIBLE] Validate site.yml ==============='
 cd ansible
